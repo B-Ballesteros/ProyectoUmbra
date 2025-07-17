@@ -46,12 +46,15 @@ ProyectoUmbra es una aplicación de escritorio desarrollada en WPF (.NET 8, C# 12
 3. Configura tu clave de API de OpenAI en el archivo `openai.key.local` (no se sube a GitHub).
 4. Compila y ejecuta la aplicación.
 
-## Configuración de archivos de recursos y entorno local
+## Archivos locales requeridos 
 
-- Para trabajar en modo desarrollo (Debug), crea el archivo `Strings.Local.resx` en la carpeta `Resources` copiando y reemplazando el contenido del archivo `Strings.Public.resx`.
-- El archivo `Strings.Local.resx` está excluido del repositorio por motivos de privacidad y personalización local.
-- Si trabajas en modo producción (Release), se utilizará automáticamente el archivo `Strings.Public.resx`.
+Asegúrate de incluir los siguientes archivos locales en el proyecto para un funcionamiento correcto:
 
+- `Resources/Strings.Local.resx`
+- `Resources/Strings.Release.resx`
+- `Resources/Colors.Local.xaml`
+- `Resources/Colors.Release.xaml`
+- `Resources/pergamino.png`
 ---
 
 Este proyecto facilita la moderación de prompts para generación de imágenes, ayudando a cumplir con las políticas de OpenAI y Sora.

@@ -11,7 +11,7 @@ namespace ProyectoUmbra.Helpers
 #if DEBUG
             var resourceFile = "ProyectoUmbra.Resources.Strings.Local";
 #else
-            var resourceFile = "ProyectoUmbra.Resources.Strings.Public";
+            var resourceFile = "ProyectoUmbra.Resources.Strings.Release";
 #endif
             _resourceManager = new ResourceManager(resourceFile, typeof(ResourceProvider).Assembly);
         }

@@ -9,15 +9,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Fonts\Cinzel\Cinzel-Black.ttf" />
+    <None Remove="Resources\Fonts\Cinzel\Cinzel-Bold.ttf" />
+    <None Remove="Resources\Fonts\Cinzel\Cinzel-ExtraBold.ttf" />
+    <None Remove="Resources\Fonts\Cinzel\Cinzel-Medium.ttf" />
+    <None Remove="Resources\Fonts\Cinzel\Cinzel-Regular.ttf" />
+    <None Remove="Resources\Fonts\Cinzel\Cinzel-SemiBold.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\Cinzel\Cinzel-Black.ttf" />
+    <Resource Include="Resources\Fonts\Cinzel\Cinzel-Bold.ttf" />
+    <Resource Include="Resources\Fonts\Cinzel\Cinzel-ExtraBold.ttf" />
+    <Resource Include="Resources\Fonts\Cinzel\Cinzel-Medium.ttf" />
+    <Resource Include="Resources\Fonts\Cinzel\Cinzel-Regular.ttf" />
+    <Resource Include="Resources\Fonts\Cinzel\Cinzel-SemiBold.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Resources\Strings.Local.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Strings.Local.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\Strings.Public.Designer.cs">
+    <Compile Update="Resources\Strings.Release.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Strings.Public.resx</DependentUpon>
+      <DependentUpon>Strings.Release.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -26,9 +44,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Local.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Strings.Public.resx">
+    <EmbeddedResource Update="Resources\Strings.Release.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Strings.Public.Designer.cs</LastGenOutput>
+      <LastGenOutput>Strings.Release.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
