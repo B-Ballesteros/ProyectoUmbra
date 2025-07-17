@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
+using System.Resources;
 
-namespace ProyectoUmbra.Utilities
+namespace ProyectoUmbra.Helpers
 {
-    internal class ResourceProvider
+    public static class ResourceProvider
     {
+        private static ResourceManager _resourceManager;
+        static ResourceProvider()
+        {
+#if DEBUG
+            var resourceFile = "ProyectoUmbra.Resources.Strings.Local";
+#else
+            var resourceFile = "ProyectoUmbra.Resources.Strings.Public";
+#endif
+            _resourceManager = new ResourceManager(resourceFile, typeof(ResourceProvider).Assembly);
+        }
+
+        public static string GetString(string key) => _resourceManager.GetString(key, CultureInfo.CurrentUICulture) ?? string.Empty;
     }
 }
