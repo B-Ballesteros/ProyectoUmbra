@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /ProyectoUmbra/Resources/Strings.Local.resx
 /ProyectoUmbra/Resources/Strings.Local.Designer.cs
+/ProyectoUmbra/Resources/Fonts/Cinzel
+/ProyectoUmbra/Resources/Colors.Local.xaml
