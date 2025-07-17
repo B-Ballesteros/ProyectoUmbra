@@ -61,92 +61,110 @@ namespace ProyectoUmbra.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Evaluación de Prompts.
-        /// </summary>
-        internal static string EvalSubtitle {
-            get {
-                return ResourceManager.GetString("EvalSubtitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Proyecto Umbra.
         /// </summary>
-        internal static string EvalTitle {
+        internal static string AppName {
             get {
-                return ResourceManager.GetString("EvalTitle", resourceCulture);
+                return ResourceManager.GetString("AppName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Evaluar.
+        ///   Looks up a localized string similar to Evaluación de contenido.
         /// </summary>
-        internal static string EvaluateButton {
+        internal static string EvaluationScreen_Title {
             get {
-                return ResourceManager.GetString("EvaluateButton", resourceCulture);
+                return ResourceManager.GetString("EvaluationScreen.Title", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Historial.
+        ///   Looks up a localized string similar to Historial de evaluaciones.
         /// </summary>
-        internal static string HistoryTooltip {
+        internal static string MainScreen_HistoryTooltip {
             get {
-                return ResourceManager.GetString("HistoryTooltip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sistema de Moderación de contenidos.
-        /// </summary>
-        internal static string MainSubtitle {
-            get {
-                return ResourceManager.GetString("MainSubtitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Proyecto Umbra.
-        /// </summary>
-        internal static string MainTitle {
-            get {
-                return ResourceManager.GetString("MainTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Powered by OpenIA.
-        /// </summary>
-        internal static string PoweredBy {
-            get {
-                return ResourceManager.GetString("PoweredBy", resourceCulture);
+                return ResourceManager.GetString("MainScreen.HistoryTooltip", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Iniciar evaluación.
         /// </summary>
-        internal static string StartEvaluation {
+        internal static string MainScreen_StartButton {
             get {
-                return ResourceManager.GetString("StartEvaluation", resourceCulture);
+                return ResourceManager.GetString("MainScreen.StartButton", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Procesando....
+        ///   Looks up a localized string similar to Sistema de moderación de contenido.
         /// </summary>
-        internal static string StatusProcessing {
+        internal static string MainScreen_Subtitle {
             get {
-                return ResourceManager.GetString("StatusProcessing", resourceCulture);
+                return ResourceManager.GetString("MainScreen.Subtitle", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Listo.
+        ///   Looks up a localized string similar to Proyecto Umbra.
         /// </summary>
-        internal static string StatusReady {
+        internal static string MainScreen_Title {
             get {
-                return ResourceManager.GetString("StatusReady", resourceCulture);
+                return ResourceManager.GetString("MainScreen.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evaluar.
+        /// </summary>
+        internal static string Prompt_Button {
+            get {
+                return ResourceManager.GetString("Prompt.Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingrese el texto a evaluar.
+        /// </summary>
+        internal static string Prompt_Label {
+            get {
+                return ResourceManager.GetString("Prompt.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resultado del análisis.
+        /// </summary>
+        internal static string Response_Label {
+            get {
+                return ResourceManager.GetString("Response.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evaluación completada..
+        /// </summary>
+        internal static string Status_Done {
+            get {
+                return ResourceManager.GetString("Status.Done", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Procesando contenido….
+        /// </summary>
+        internal static string Status_Evaluating {
+            get {
+                return ResourceManager.GetString("Status.Evaluating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preparando análisis….
+        /// </summary>
+        internal static string Status_Waiting {
+            get {
+                return ResourceManager.GetString("Status.Waiting", resourceCulture);
             }
         }
     }
